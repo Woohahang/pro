@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value="userList"/>
+		<list key="findhistory">
+			<item value="userList"/>
+			<item value="name"/>
+			<item value="contex"/>
+			<item value="context"/>
+			<item value="user_name"/>
+			<item value="user_id"/>
+			<item value="menu_member"/>
+			<item value="getConnection"/>
+			<item value="MemberDAO"/>
+			<item value="vo"/>
+			<item value="executeQuery"/>
+			<item value="query"/>
+			<item value="ServletException"/>
+			<item value="Connection"/>
+			<item value="listMembers"/>
+		</list>
+		<list key="replacehistory">
+			<item value="context"/>
+			<item value="pstmt"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="672"/>
+		<item key="DIALOG_Y_ORIGIN" value="554"/>
+		<item key="DIALOG_WIDTH" value="322"/>
+		<item key="DIALOG_HEIGHT" value="382"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>

@@ -1,0 +1,12 @@
+package chapter07;
+
+public class Exercise7_27 {
+
+	static class test {
+		int a = 100;
+	}
+
+	public static void main(String[] args) {
+		System.out.println(new test().a);
+	}
+}

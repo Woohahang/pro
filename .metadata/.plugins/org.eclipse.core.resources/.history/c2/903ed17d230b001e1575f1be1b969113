@@ -1,0 +1,12 @@
+package chapter08;
+
+public class Test {
+	public static void main(String[] args) {
+
+		try {
+		System.out.println(3/0);
+		} catch (Exception e) {
+			
+		}
+	}
+}

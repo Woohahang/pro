@@ -1,0 +1,22 @@
+package chapter06;
+
+public class MyClass5 {
+
+	int x = 1;
+
+	public MyClass5() {
+		System.out.println("생성자 호출");
+		x = 2;
+	}
+
+	void printX() {
+		System.out.println(x);
+	}
+
+	public static void main(String[] args) {
+		MyClass5 a = new MyClass5();
+		
+		a.printX();
+		
+	}
+}

@@ -1,0 +1,12 @@
+package chapter07;
+
+public class Exercise7_27 {
+
+	static void d() {
+		
+	}
+	
+	public static void main(String[] args) {
+
+	}
+}

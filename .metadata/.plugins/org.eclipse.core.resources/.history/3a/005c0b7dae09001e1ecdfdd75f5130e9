@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+	function setPopUpStart(obj) {
+		if (obj.checked == true) {
+			var expireDate = new Date();
+			var days = 1;
+		}
+	}
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

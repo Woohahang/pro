@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+	window.load = pageLoad;
+
+	getCookieValue();
+
+	function pageLoad() {
+
+	}
+
+	function getCookieValue() {
+		var result = "false";
+
+	}
+</script>
+
+
+</head>
+<body>
+	<form>
+		<input type=button value="쿠키삭제" onClick="deleteCookie()">
+	</form>
+</body>
+</html>

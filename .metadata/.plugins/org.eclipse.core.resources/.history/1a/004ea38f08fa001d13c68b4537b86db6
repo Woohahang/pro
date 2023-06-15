@@ -1,0 +1,12 @@
+package oop;
+
+public class Student {
+	String studentName;
+	int grade;
+	int money;
+
+	Student(String studentName, int money) {
+		this.studentName = studentName;
+		this.money = money;
+	}
+}

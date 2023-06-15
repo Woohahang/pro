@@ -1,0 +1,15 @@
+package oop;
+
+public class Bus {
+	int busNumber; // 버스 번호
+	int passengerCount; // 승객 수
+	int money; // 수입
+	
+	Bus(int busNumber, int passengerCount, int money) {
+		this.busNumber = busNumber;
+		this.passengerCount = passengerCount;
+		this.money = money;
+	}
+	
+	
+}

@@ -1,0 +1,10 @@
+package oop;
+
+public class Subway {
+	int lineNumber;
+	int passengerCount;
+	int money;
+	
+	
+
+}
