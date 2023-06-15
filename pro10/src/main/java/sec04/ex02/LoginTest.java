@@ -37,20 +37,14 @@ public class LoginTest extends HttpServlet {
 			session.setAttribute("loginUser", loginUser);
 		}
 
+		out.println("<head>");
+		out.println("<script type='text/javascript'>");
+		out.println("setTimeout('history.go(0);', 5000)");
+		out.println("</script>");
+		out.println("</head>");
 		out.println("<html><body>");
-		out.println("이름는 " + user_id + "<br>");
-
-		out.println("총 접속자 수는" + LoginImpl.total_user + "명");
-		out.println("접속 아이디:<br>");
-
-		List list = (ArrayList) context.getAttribute("userList");
-
-		for (int i = 0; i < list.size(); i++) {
-			out.print(list.get(i) + "<br>");
-		}
-
-		out.println("<a href='logout?user_id=" + user_id + "'>로그아웃</a>");
-
+		out.println("아이디는 " + loginUser.user_id + "<br>");
+		out.println("총 접속자수는" + LoginImpl.total_user + "<br>");
 		out.println("</body></html>");
 	}
 
