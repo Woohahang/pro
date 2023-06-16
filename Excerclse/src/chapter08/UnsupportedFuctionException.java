@@ -7,8 +7,9 @@ public class UnsupportedFuctionException extends RuntimeException {
 		return ERR_CODE;
 	}
 
+	@Override
 	public String getMessage() {
-		return null;
+		return super.getMessage();
 	}
 
 }
