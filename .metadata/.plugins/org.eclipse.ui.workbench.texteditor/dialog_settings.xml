@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="userList"/>
+		<item key="selection" value="add"/>
 		<list key="findhistory">
+			<item value="add"/>
+			<item value="addMember"/>
+			<item value="package chapter10;"/>
 			<item value="userList"/>
 			<item value="name"/>
 			<item value="contex"/>
@@ -20,9 +23,6 @@
 			<item value="vo"/>
 			<item value="executeQuery"/>
 			<item value="query"/>
-			<item value="ServletException"/>
-			<item value="Connection"/>
-			<item value="listMembers"/>
 		</list>
 		<list key="replacehistory">
 			<item value="context"/>
