@@ -4,13 +4,13 @@
 
 
 <jsp:useBean id="m" class="sec01.ex01.MemberBean"></jsp:useBean>
-<jsp:setProperty property="*" name="m"  />
+<jsp:setProperty property="*" name="m" />
 
 <%
-/* String   id=request.getParameter("id");
-String  pwd = request.getParameter("pwd");
-String  name = request.getParameter("name");
-String  email = request.getParameter("email"); */
+/* String id = request.getParameter("id");
+String pwd = request.getParameter("pwd");
+String name = request.getParameter("name");
+String email = request.getParameter("email"); */
 
 /* MemberBean m=new MemberBean(id,pwd,name, email ); */
 
@@ -19,11 +19,10 @@ m.setPwd(pwd);
 m.setName(name);
 m.setEmail(email); */
 
-MemberDAO dao=new MemberDAO();
+MemberDAO dao = new MemberDAO();
 
 dao.addMember(m);
-List<MemberBean> memberList=dao.listMembers();
-
+List<MemberBean> memberList = dao.listMembers();
 %>
 <!DOCTYPE html>
 <html>
@@ -42,8 +41,8 @@ List<MemberBean> memberList=dao.listMembers();
 			<td width="5%">가입일</td>
 		</tr>
 		<%
-	   if(memberList.size()==0){
-		   %>
+		if (memberList.size() == 0) {
+		%>
 
 
 		<tr>
@@ -54,30 +53,29 @@ List<MemberBean> memberList=dao.listMembers();
 			</td>
 		</tr>
 
-		<%	   
-	   }else{
-		   for(int i=0;i<memberList.size();i++){
-			   MemberBean bean= memberList.get(i);
-			   %>
+		<%
+		} else {
+		for (int i = 0; i < memberList.size(); i++) {
+			MemberBean bean = memberList.get(i);
+		%>
 		<tr align="center">
-		<td><%=bean.getId() %></td>
-	       <td><%=bean.getPwd() %></td>
-	       <td><%=bean.getName() %></td>
-	       <td><%=bean.getEmail() %></td>
-	       <td><%=bean.getJoinDate() %></td>
-		
+			<td><%=bean.getId()%></td>
+			<td><%=bean.getPwd()%></td>
+			<td><%=bean.getName()%></td>
+			<td><%=bean.getEmail()%></td>
+			<td><%=bean.getJoinDate()%></td>
+
 			<%-- <td><jsp:getProperty property="id" name="m"/></td>
 			<td><jsp:getProperty property="pwd" name="m"/></td>
 			<td><jsp:getProperty property="name" name="m"/></td>
 			<td><jsp:getProperty property="email" name="m"/></td> --%>
-			
-			
+
+
 		</tr>
 		<%
-			   
-		   }
-	   }
-	   %>
+		}
+		}
+		%>
 		<tr height="1" bgcolor="#99ccff">
 			<td colspan="5"></td>
 		</tr>
