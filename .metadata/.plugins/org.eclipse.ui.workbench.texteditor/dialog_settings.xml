@@ -6,8 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="add"/>
+		<item key="selection" value="address"/>
 		<list key="findhistory">
+			<item value="address"/>
+			<item value="city"/>
+			<item value="byte"/>
+			<item value="membersList"/>
+			<item value="Member 생성자 호출됨"/>
 			<item value="add"/>
 			<item value="addMember"/>
 			<item value="package chapter10;"/>
@@ -18,11 +23,6 @@
 			<item value="user_name"/>
 			<item value="user_id"/>
 			<item value="menu_member"/>
-			<item value="getConnection"/>
-			<item value="MemberDAO"/>
-			<item value="vo"/>
-			<item value="executeQuery"/>
-			<item value="query"/>
 		</list>
 		<list key="replacehistory">
 			<item value="context"/>

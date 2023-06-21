@@ -16,7 +16,7 @@ false 가 표현식을 무시해라 걍 써진다는거
 
 	${5}
 	<br> ${5+8-7}
-	<br> hi
+	<br> 
 	<br> ${"hi"}
 	<br> ${'hi'}
 	<br> ${"'hi'"}
@@ -29,7 +29,7 @@ false 가 표현식을 무시해라 걍 써진다는거
 	<br> ${null + 10}
 
 	<br> ${true}
-	<br> ${true || false}
+	<br> <%-- ${true || false} --%>
 	<br> ${false || true}
 	<br> ${false && true}
 	<br> ${false and true}

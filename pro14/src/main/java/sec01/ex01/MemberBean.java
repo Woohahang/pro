@@ -10,6 +10,7 @@ public class MemberBean {
 	private String name;
 	private String email;
 	private Date joinDate;
+	private Address address;
 
 	// 생성자 - 객체 생성시 초기화 역할 담당, 생성자 만드는 법 클래스명(){}, 일종의 메서드, 리턴 타입이 없다.
 
@@ -21,7 +22,6 @@ public class MemberBean {
 	// 생성자를 통한 초기화
 
 	public MemberBean(String id, String pwd, String name, String email) {
-
 		this.id = id;
 		this.pwd = pwd;
 		this.name = name;
@@ -34,6 +34,8 @@ public class MemberBean {
 	public String getId() {
 		return id;
 	}
+	
+
 
 	// Setter(다른 클래스에서 id 값을 설정하는 역할)
 	public void setId(String id) {
@@ -71,5 +73,14 @@ public class MemberBean {
 	public void setJoinDate(Date joinDate) {
 		this.joinDate = joinDate;
 	}
+	
+	public Address getAddress() {
+		return address;
+	}
 
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+	
+	
 }

@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="pakage1.A"/>
-    <fullyQualifiedTypeName name="package1.A"/>
-    <fullyQualifiedTypeName name="inheritance.Human"/>
-    <fullyQualifiedTypeName name="inheritance2.Fivepeople"/>
     <fullyQualifiedTypeName name="casting.Parent"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane.MoveAction"/>
     <fullyQualifiedTypeName name="instanceofEx.Parent"/>
@@ -56,8 +52,12 @@
     <fullyQualifiedTypeName name="sec04.ex01.LoginImpl"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
     <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
-    <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="cgapter02.MainEx"/>
+    <fullyQualifiedTypeName name="java.awt.Window.Type"/>
+    <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
 </qualifiedTypeNameHistroy>

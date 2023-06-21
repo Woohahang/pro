@@ -20,10 +20,10 @@ public class HashMapEx {
 
 		// 키 값을 한번 다 가지고 와보자.
 		int scorel = map.get("홍일동");
-		System.out.println(scorel);
+//		System.out.println(scorel);
 
 		Set<String> keyset = map.keySet(); // Set은 중복되지 않는 것이고 순서 없다.
-		System.out.println(keyset);
+//		System.out.println(keyset);
 
 		for (String key : keyset) {
 			System.out.print(key + " : ");
