@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="casting.Parent"/>
-    <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane.MoveAction"/>
-    <fullyQualifiedTypeName name="instanceofEx.Parent"/>
-    <fullyQualifiedTypeName name="oop.Member"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="NullPointerEx"/>
     <fullyQualifiedTypeName name="java.lang.ReflectiveOperationException"/>
     <fullyQualifiedTypeName name="interfaceEx1.Searchable"/>
     <fullyQualifiedTypeName name="interfaceEx1.Television"/>
@@ -30,7 +24,6 @@
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="javax.naming.InitialContext"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.apache.catalina.Context"/>
     <fullyQualifiedTypeName name="javax.sql.DataSource"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
@@ -60,4 +53,11 @@
     <fullyQualifiedTypeName name="cgapter02.MainEx"/>
     <fullyQualifiedTypeName name="java.awt.Window.Type"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="org.apache.tomcat.util.http.fileupload.disk.DiskFileItem"/>
+    <fullyQualifiedTypeName name="org.apache.commons.fileupload.disk.DiskFileItemFactory"/>
+    <fullyQualifiedTypeName name="org.apache.tomcat.util.http.fileupload.disk.DiskFileItemFactory"/>
+    <fullyQualifiedTypeName name="org.apache.commons.fileupload.servlet.ServletFileUpload"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.apache.commons.fileupload.FileItem"/>
 </qualifiedTypeNameHistroy>

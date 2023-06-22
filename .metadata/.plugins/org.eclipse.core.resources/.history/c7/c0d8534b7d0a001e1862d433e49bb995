@@ -1,7 +1,0 @@
-package sec03.ex01;
-
-import javax.xml.crypto.dsig.spec.XPathType.Filter;
-
-public class EncoderFilter extends Filter {
-
-}

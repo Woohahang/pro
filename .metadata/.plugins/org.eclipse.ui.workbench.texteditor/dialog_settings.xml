@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="address"/>
+		<item key="selection" value="Sys"/>
 		<list key="findhistory">
+			<item value="sys"/>
+			<item value="representation"/>
 			<item value="address"/>
 			<item value="city"/>
 			<item value="byte"/>
@@ -21,8 +23,6 @@
 			<item value="contex"/>
 			<item value="context"/>
 			<item value="user_name"/>
-			<item value="user_id"/>
-			<item value="menu_member"/>
 		</list>
 		<list key="replacehistory">
 			<item value="context"/>
