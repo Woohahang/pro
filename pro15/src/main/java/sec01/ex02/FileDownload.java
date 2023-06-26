@@ -38,7 +38,7 @@ public class FileDownload extends HttpServlet {
 		System.out.println("fileName=" + fileName);
 		
 		
-		
+		// OutputStream 얘의 역할은 그냥 출력만 하겠다.
 		OutputStream out = response.getOutputStream();
 		
 		

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script>
+        function fun1() {
+            $.ajax({
+                type: "get",
+                dataType:"text",
+                url: "/pro16/ajaxTest1",
+                // url: "http://localhost:8090/pro16/ajaxTest1" // 이것도 되고 위에 것도 된다. 걍해봄
+                data : {'name' : '한글 되나? 되네'},
+                
+                success: function (data, textStaus) {
+                    $('#name').append(data);
+                    // append 추가하다 라는거 뭔말이냐? name이라는 아이디를 가지고 있는 태그에 data 변수를 추가해버림
+                },
+                error: function (data, textStaus) {
+                    alert("에러");
+                },
+                complete: function (data, textStaus) {
+                    alert("완료");
+                }
+
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="fun1()" value="서버에 데이터 전송">
+    <div id="name"></div>
+</body>
+
+</html>

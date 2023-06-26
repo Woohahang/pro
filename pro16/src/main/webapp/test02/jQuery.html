@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<script>
+	// 선택자로 여러개의 문서 객체를 선택할 때 text() 메소드는 모든 문서 객체 내부의 문자를 출력, html() 메소드는 첫 번째 문서 객체내부의 문자를 출력
+
+	$(document).ready(function() {
+		$('.class1').text('hi');
+		$('.class1.select').text('bye');
+	});
+</script>
+
+</head>
+<body>
+
+	<div class="class1">안녕하세요1</div>
+	<div class="class1 select">안녕하세요2</div>
+	<div class="class3">안녕하세요3</div>
+	<div id="unique2">제이쿼리</div>
+	<div id="unique3">
+		<p>제이쿼리는 아주 쉽다.</p>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<script>
+	function fun1() {
+		$(document).ready(function() {
+			$('#area1').html('hi');
+		});
+	}
+	
+	function fun1_1(obj) {	
+		// 이건 안 나온다. 안 나오는건 아는데 뭘 알려준지 모르겠음
+		$('#area1_1').html(obj)
+	}
+	
+	function fun2 () {
+		$('#imgarea').html("<img src='../img/hedgehog.jpg'>");
+	}
+	
+</script>
+
+</head>
+<body>
+
+	<div id="area1"></div>
+	<div id="area2"></div>
+
+	<input type="button" value="눌러보세요" onclick="fun1()">
+	<input type="button" value="눌러보세요" onclick="fun1_1()">
+	
+	
+	<div id="imgarea"></div>
+	<input type="button" value="이미지 나오게 하기" onclick="fun2()">
+
+</body>
+</html>

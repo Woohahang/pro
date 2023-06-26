@@ -6,8 +6,14 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Sys"/>
+		<item key="selection" value="data"/>
 		<list key="findhistory">
+			<item value="data"/>
+			<item value="info"/>
+			<item value="i"/>
+			<item value="&lt;!DOCTYPE html&gt;"/>
+			<item value="param"/>
+			<item value="file_repo"/>
 			<item value="sys"/>
 			<item value="representation"/>
 			<item value="address"/>
@@ -17,12 +23,6 @@
 			<item value="Member 생성자 호출됨"/>
 			<item value="add"/>
 			<item value="addMember"/>
-			<item value="package chapter10;"/>
-			<item value="userList"/>
-			<item value="name"/>
-			<item value="contex"/>
-			<item value="context"/>
-			<item value="user_name"/>
 		</list>
 		<list key="replacehistory">
 			<item value="context"/>
