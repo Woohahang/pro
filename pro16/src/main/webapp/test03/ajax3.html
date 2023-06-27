@@ -4,45 +4,45 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 
-<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 <script>
-function fn_process(){
-	
-	var _id=$('#t_id').val();
-	console.log("아이디"+_id);
-	if(_id==''){
-		alert("ID 입력 하세요");
-		return;
+	function fn_process() {
+
+		var _id = $('#t_id').val();
+		console.log("아이디" + _id);
+		if (_id == '') {
+			alert("ID 입력 하세요");
+			return;
+		}
+
+		$.ajax({
+			type : "post",
+			async : true,
+			url : "http://localhost:8090/pro16/mem",
+			dataType : "text",
+			data : {
+				id : _id
+			},
+			success : function(data, textStatus) {
+				console.log("성공 후 전송한 값 :" + data);
+				if (data == 'usable') {
+					$('#message').text("사용할 수 있는 아이디");
+				} else {
+					$('#message').text("사용할 수 없는 ID입니다.");
+				}
+			},
+			error : function(data, textStatus) {
+				console.log(textStatus);
+				alert("에러가 발생했습니다.");
+
+			},
+			complete : function(data, textStatus) {
+				console.log(textStatus);
+			},
+
+		});
 	}
-	
-	
-	$.ajax({
-		 type:"post",
-		 async:true,
-		 url:"http://localhost:8090/pro16/mem",
-		 dataType:"text",
-		 data:{id : _id},
-		 success : function(data, textStatus){
-			 console.log("성공 후 전송한 값 :"+ data);
-			if(data == 'usable'){
-				$('#message').text("사용할 수 있는 아이디");
-			}else{
-				$('#message').text("사용할 수 없는 ID입니다.");
-			}
-		 },
- 		 error : function(data, textStatus){
- 			console.log(textStatus);
- 			alert("에러가 발생했습니다.");ㅣ
- 			
-		 },
- 		 complete : function(data, textStatus){
- 			console.log(textStatus);
-		 },
-		
-	});
-}
-	
 </script>
 
 
@@ -50,9 +50,12 @@ function fn_process(){
 <body>
 
 
-<input type="text" id="t_id">
-<input type="button" id="btnDuplicate" value="ID 중복체크하기" onClick="fn_process()" /><br><br>
-   <div id="message"></div>
+	<input type="text" id="t_id">
+	<input type="button" id="btnDuplicate" value="ID 중복체크하기"
+		onClick="fn_process()" />
+	<br>
+	<br>
+	<div id="message"></div>
 
 </body>
 </html>
