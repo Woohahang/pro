@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="interfaceEx1.Searchable"/>
-    <fullyQualifiedTypeName name="interfaceEx1.Television"/>
     <fullyQualifiedTypeName name="nextClass2.A.B"/>
     <fullyQualifiedTypeName name="nextClass2.A.C"/>
     <fullyQualifiedTypeName name="interfaceEx1.RemoteController"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.apache.commons.fileupload.FileItem"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="org.json.simple.parser.JSONParser"/>
+    <fullyQualifiedTypeName name="org.json.simple.JSONArray"/>
 </qualifiedTypeNameHistroy>

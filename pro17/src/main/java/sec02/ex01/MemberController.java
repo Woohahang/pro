@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/member/*")
+//@WebServlet("/member/*")
 public class MemberController extends HttpServlet {
 
 	MemberDAO memberdao;
@@ -33,7 +33,7 @@ public class MemberController extends HttpServlet {
 			throws ServletException, IOException {
 		response.setContentType("text/html;charset=utf-8");
 
-		String action = request.getPathInfo();
+		String action = request.getPathInfo(); // request.getPathInfo() 전달받은 값을 반환 즉, 폼 태그의 엑션으로 보내면 그 페이지 즉, 멤버 폼에서 엑션 찍었으면 멤버폼.do 이렇게 찍힘
 		System.out.println("액션값 : " + action + "###");
 
 		String nextPage = null;
@@ -52,12 +52,12 @@ public class MemberController extends HttpServlet {
 			MemberVO vo = new MemberVO(id, pwd, name, email);
 
 			memberdao.addMember(vo);
-			nextPage = "/member/test02/listMembers.jsp";
+			nextPage = "/member/test03/listMembers.jsp";
 		} else {
 			List<MemberVO> membersList = memberdao.listMembers();
 
 			request.setAttribute("membersList", membersList);
-			nextPage = "/test02/listMembers.jsp";
+			nextPage = "/test03/listMembers.jsp";
 		}
 
 		RequestDispatcher dispatcher = request.getRequestDispatcher(nextPage);

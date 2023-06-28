@@ -14,7 +14,7 @@
 <body>
 <form action="${contextPath}/member/addMember.do" method="post">
 <h1  style="text-align:center">회원 가입창</h1>
-	<table align="center">
+	<table  align="center">
 	
 		<tr>
        <td width="200"><p align="right">아이디</td>

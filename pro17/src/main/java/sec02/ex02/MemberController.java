@@ -13,10 +13,10 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/member/*")
 public class MemberController extends HttpServlet {
 
-	MemberDAO memberdao;
+	MemberDAO memberDAO;
 
 	public MemberController() {
-		memberdao = new MemberDAO();
+		memberDAO = new MemberDAO();
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -39,7 +39,7 @@ public class MemberController extends HttpServlet {
 		String nextPage = null;
 		if (action.equals("") || action.equals("listMembers.do")) {
 
-			List<MemberVO> membersList = memberdao.listMembers();
+			List<MemberVO> membersList = memberDAO.listMembers();
 
 			request.setAttribute("membersList", membersList);
 			nextPage = "/listMembers.jsp";
@@ -48,16 +48,41 @@ public class MemberController extends HttpServlet {
 			String pwd = request.getParameter("pwd");
 			String name = request.getParameter("name");
 			String email = request.getParameter("email");
-			System.out.println(id + "," + pwd + "," + name + "," + email);
+			System.out.println(id+","+pwd+","+name+","+email);
 			MemberVO vo = new MemberVO(id, pwd, name, email);
 
-			memberdao.addMember(vo);
-			nextPage = "/member/test02/listMembers.jsp";
-		} else {
-			List<MemberVO> membersList = memberdao.listMembers();
+			memberDAO.addMember(vo);
+			
+			request.setAttribute("msg", "addMember");
+			nextPage = "/member/listMembers.jsp";
+		}else if(action.equals("/modMemberForm.do")) {
+			String id=request.getParameter("id");
+			MemberVO memInfo = memberDAO.findMember(id);
+			request.setAttribute("memInfo", memInfo);
+			nextPage = "/modMemberForm.jsp";
+		}else if(action.equals("/modMember.do")) {
+			String id=request.getParameter("id");
+		     String pwd=request.getParameter("pwd");
+		     String name= request.getParameter("name");
+	         String email= request.getParameter("email");
+		     MemberVO memberVO = new MemberVO(id, pwd, name, email);
+		     memberDAO.modMember(memberVO);
+		     
+		     request.setAttribute("msg", "modMember");
+		     nextPage = "/member/listMembers.jsp";
+		     
+		}else if(action.equals("/delMember.do")) {
+			String id=request.getParameter("id");
+			memberDAO.delMember(id);
+			
+			request.setAttribute("msg", "delMember");
+			nextPage = "/member/listMembers.jsp";
+			
+		}else {
+			List<MemberVO> membersList = memberDAO.listMembers();
 
 			request.setAttribute("membersList", membersList);
-			nextPage = "/test02/listMembers.jsp";
+			nextPage = "/listMembers.jsp";
 		}
 
 		RequestDispatcher dispatcher = request.getRequestDispatcher(nextPage);

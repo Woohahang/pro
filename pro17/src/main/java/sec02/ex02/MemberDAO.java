@@ -236,4 +236,62 @@ public class MemberDAO {
 		return result;
 	}
 	
+	
+	
+	
+	
+	public MemberVO findMember(String id){
+		MemberVO memInfo = null;
+		try {
+			con = dataFactory.getConnection();
+			String query = "select * from t_member where id=?";
+			
+			pstmt=con.prepareStatement(query);
+			pstmt.setString(1, id);
+			System.out.println(query);
+			ResultSet rs = pstmt.executeQuery();
+			rs.next();
+			String _id=rs.getString("id");
+			String pwd = rs.getString("pwd");
+			String name = rs.getString("name");
+			String email = rs.getString("email");
+			Date joinDate = rs.getDate("joinDate");
+			memInfo = new MemberVO(id, pwd, name, email, joinDate);
+			pstmt.close();
+			con.close();
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+		
+		
+		return memInfo;
+	}
+	
+	
+	public void modMember(MemberVO memberVO){
+		
+		String id = memberVO.getId();
+		String pwd = memberVO.getPwd();
+		String name = memberVO.getName();
+		String email = memberVO.getEmail();
+		try {
+			con = dataFactory.getConnection();
+			String query = "update t_member set pwd=?,name=?,email=?  where id=?";
+			System.out.println(query);
+			pstmt = con.prepareStatement(query);
+			pstmt.setString(1, pwd);
+			pstmt.setString(2, name);
+			pstmt.setString(3, email);
+			pstmt.setString(4, id);
+			pstmt.executeUpdate();
+			pstmt.close();
+			con.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
 }

@@ -3,31 +3,57 @@ package sec02.ex02;
 import java.sql.Date;
 
 public class MemberVO {
-
-	// 필드(field) - 객체의 데이터가 저장되는 곳
+	
+	//필드(field) - 객체의 데이터가 저장되는 곳
 	private String id;
 	private String pwd;
 	private String name;
 	private String email;
 	private Date joinDate;
-
-	// 생성자 - 객체 생성시 초기화 역할 담당, 생성자 만드는 법 클래스명(){}, 일종의 메서드, 리턴 타입이 없다.
-
-	// 기본 생성자
+	
+	
+	
+	//생성자 - 객체 생성시 초기화 역할 담당, 생성자 만드는 법   클래스명(){}, 일종의 메서드, 리턴 타입이 없다.
+	
+	//기본 생성자
 	public MemberVO() {
 		System.out.println("Member 생성자 호출됨");
 	}
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public MemberVO(String id, String pwd, String name, String email) {
-
+		
 		this.id = id;
 		this.pwd = pwd;
 		this.name = name;
 		this.email = email;
 	}
 
-	public MemberVO(String id, String pwd, String name, String email, Date joinDate) {
 
+
+
+
+
+
+
+
+
+
+
+
+	public MemberVO(String id, String pwd, String name, String email, Date joinDate) {
+		
 		this.id = id;
 		this.pwd = pwd;
 		this.name = name;
@@ -35,16 +61,28 @@ public class MemberVO {
 		this.joinDate = joinDate;
 	}
 
-	// 메서드 - 객체의 동작에 해당하는 실행 블록
 
-	// Getter(다른 클래스에서 id 값을 가져가제 하는 역할)
-	public String getId() {
+
+
+
+
+
+
+
+
+
+
+
+	//메서드 - 객체의 동작에 해당하는 실행 블록 
+	
+	//Getter(다른 클래스에서 id 값을 가져가제 하는 역할)
+	public String getId(){
 		return id;
 	}
-
-	// Setter(다른 클래스에서 id 값을 설정하는 역할)
-	public void setId(String id) {
-		this.id = id;
+	
+	//Setter(다른 클래스에서 id 값을 설정하는 역할)
+	public void setId(String id){
+		this.id=id;
 	}
 
 	public String getPwd() {
@@ -78,5 +116,16 @@ public class MemberVO {
 	public void setJoinDate(Date joinDate) {
 		this.joinDate = joinDate;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

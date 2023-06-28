@@ -11,6 +11,35 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 
+
+<c:choose>
+	<c:when test='${msg == "addMember"}'>
+		<script>
+			window.onload = function() {
+				alert("회원 등록함");
+			}
+		</script>
+	</c:when>
+	<c:when test="${msg == 'modMember'}">	
+		<script>
+			window.onload = function() {
+				alert("회원 수정함");
+			}
+		</script>
+	</c:when>
+	<c:when test="${msg == 'delMember'}">
+		<script>
+			window.onload = function() {
+				alert("회원 삭제함");
+			}
+		</script>	
+	</c:when>
+</c:choose>
+
+
+
+
+
 <style>
 .cls1 {
 	font-size: 40px;
@@ -34,6 +63,8 @@
 			<td width="7%"><b>이름</b></td>
 			<td width="7%"><b>이메일</b></td>
 			<td width="7%"><b>가입일</b></td>
+			<td width="7%"><b>수정</b></td>
+			<td width="7%"><b>삭제</b></td>
 		</tr>
 		<c:choose>
 			<c:when test="${empty membersList }">
@@ -46,19 +77,30 @@
 				<c:forEach var="member" items="${membersList }">
 
 					<tr align="center">
+
 						<td>${member.id}</td>
 						<td>${member.pwd }</td>
 						<td>${member.name}</td>
 						<td>${member.email }</td>
 						<td>${member.joinDate}</td>
+						<td><a
+							href="${contextPath}/member/modMemberForm.do?id=${member.id}">수정</td>
+						<td><a
+							href="${contextPath}/member/delMember.do?id=${member.id}">삭제</td>
 
 					</tr>
 				</c:forEach>
+
+
 			</c:otherwise>
 		</c:choose>
 
+
+
+
+
 	</table>
 
- <a href="${contextPath}/test02/memberForm.jsp"><p class="cls2">회원 가입하기</p></a>
+	<a href="${contextPath}/test03/memberForm.jsp"><p class="cls2">회원 가입하기</p></a>
 </body>
 </html>
